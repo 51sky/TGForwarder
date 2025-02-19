@@ -587,7 +587,7 @@ class TGForwarder:
 
 
 if __name__ == '__main__':
-    channels_groups_monitor = ['yunpanall','zaihuayun','Q66Share','NewAliPan','Oscar_4Kmovies','zyfb115','ucwpzy','ikiviyyp','alyp_TV','alyp_4K_Movies','guaguale115', 'shareAliyun', 'alyp_1', 'yunpanpan', 'hao115', 'yunpanshare','Aliyun_4K_Movies', 'dianyingshare', 'Quark_Movies', 'XiangxiuNB', 'NewQuark|60', 'ydypzyfx','ucpanpan', 'kuakeyun', 'ucquark']
+    channels_groups_monitor = ['zaihuayun','Q66Share','tgsearchers','Oscar_4Kmovies','zyfb115','ucwpzy','ikiviyyp','alyp_TV','alyp_4K_Movies','guaguale115', 'shareAliyun', 'alyp_1', 'yunpanpan', 'hao115', 'yunpanshare','Aliyun_4K_Movies', 'dianyingshare', 'Quark_Movies', 'XiangxiuNB', 'NewQuark|60', 'ydypzyfx','ucpanpan', 'kuakeyun', 'ucquark']
     forward_to_channel = 'wpziyuan'
     # 监控最近消息数
     limit = 2
@@ -642,8 +642,8 @@ if __name__ == '__main__':
     # 消息中不含关键词图文，但有些资源被放到消息评论中，如果需要监控评论中资源，需要开启，否则建议关闭
     check_replies = False
     # 是否下载图片发送消息
-    api_id = 6627460
-    api_hash = '27a53a0965e486a2bc1b1fcde473b1c4'
+    api_id = '2934000'
+    api_hash = '7407f1e353d48363c48df4c8b3904acb'
     string_session = '1AZWarzoBuxr_-nQvQlk9fOv9Ka1cUrdwV1CGEfS0nRA3sF8mVC4C7gut0hyI_dZJ0PVE7LAbQrKZN1kN2sLIQugA904ntMFIEkjyiYS5kiPBARAXEVReLDt4yGOsLBXR6cKI_ra_91fCl5aNSYRKt9IHLbqDZUZWe5n9Gba3j7SLezYzvSfN1IV-K-bs_cTdJD3pQ0WXiCvPsyml3NLMmALFhqX7xix3HKUQby4KeRt4pOo_rle6x-8MLGcuhohYLevF7C0cKZ9v_2rNMiSfiiXC0tGnXx-gEUz0bke0TKbeRzJTS-In5AfpfDSVGGj3TmDFMj_tWqcak_LLPA7tmMF1hgjHWMA='
     # 默认不开启代理
     proxy = None
