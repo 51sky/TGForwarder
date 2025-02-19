@@ -559,6 +559,7 @@ class TGForwarder:
             return list(set(links)), list(set(sizes))
         except Exception as e:
             print(f"从 {chat_name} 转发资源 失败: {e}")
+            return links, sizes  # 返回当前已处理的links和sizes，避免返回None
     async def main(self):
         start_time = time.time()
         links,sizes = await self.checkhistory()
