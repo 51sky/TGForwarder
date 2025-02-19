@@ -651,7 +651,7 @@ if __name__ == '__main__':
     # 是否下载图片发送消息
     api_id = 6627460
     api_hash = '27a53a0965e486a2bc1b1fcde473b1c4'
-    string_session = 'xxx'
+    string_session = '1AZWarzoBuxr_-nQvQlk9fOv9Ka1cUrdwV1CGEfS0nRA3sF8mVC4C7gut0hyI_dZJ0PVE7LAbQrKZN1kN2sLIQugA904ntMFIEkjyiYS5kiPBARAXEVReLDt4yGOsLBXR6cKI_ra_91fCl5aNSYRKt9IHLbqDZUZWe5n9Gba3j7SLezYzvSfN1IV-K-bs_cTdJD3pQ0WXiCvPsyml3NLMmALFhqX7xix3HKUQby4KeRt4pOo_rle6x-8MLGcuhohYLevF7C0cKZ9v_2rNMiSfiiXC0tGnXx-gEUz0bke0TKbeRzJTS-In5AfpfDSVGGj3TmDFMj_tWqcak_LLPA7tmMF1hgjHWMA='
     # 默认不开启代理
     proxy = None
     # 首次检测自己频道最近checknum条消息去重，后续检测累加已转发的消息数，如果当日转发数超过checknum条，则检测当日转发总数
