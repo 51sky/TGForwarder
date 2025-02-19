@@ -588,7 +588,7 @@ class TGForwarder:
 
 if __name__ == '__main__':
     channels_groups_monitor = ['yunpanall','MCPH086','zaihuayun','Q66Share','NewAliPan','Oscar_4Kmovies','zyfb115','ucwpzy','ikiviyyp','alyp_TV','alyp_4K_Movies','guaguale115', 'shareAliyun', 'alyp_1', 'yunpanpan', 'hao115', 'yunpanshare','Aliyun_4K_Movies', 'dianyingshare', 'Quark_Movies', 'XiangxiuNB', 'NewQuark|60', 'ydypzyfx','ucpanpan', 'kuakeyun', 'ucquark']
-    forward_to_channel = 'tgsearchers'
+    forward_to_channel = 'wpziyuan'
     # 监控最近消息数
     limit = 2
     # 监控消息中评论数，有些视频、资源链接被放到评论中
