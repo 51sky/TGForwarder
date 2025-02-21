@@ -559,7 +559,6 @@ class TGForwarder:
             return list(set(links)), list(set(sizes))
         except Exception as e:
             print(f"从 {chat_name} 转发资源 失败: {e}")
-            return links, sizes  # 返回当前已处理的links和sizes，避免返回None
     async def main(self):
         start_time = time.time()
         links,sizes = await self.checkhistory()
@@ -588,10 +587,10 @@ class TGForwarder:
 
 
 if __name__ == '__main__':
-    channels_groups_monitor = ['zaihuayun']
+    channels_groups_monitor = ['yunpanall',"tgsearchers",'MCPH086','zaihuayun','Q66Share','NewAliPan','Oscar_4Kmovies','ucwpzy','ikiviyyp','alyp_TV','alyp_4K_Movies','guaguale115', 'shareAliyun', 'alyp_1', 'yunpanpan', 'hao115', 'yunpanshare','Aliyun_4K_Movies', 'dianyingshare', 'Quark_Movies', 'XiangxiuNB', 'NewQuark', 'ydypzyfx','ucpanpan', 'kuakeyun', 'ucquark', 'tianyirigeng']
     forward_to_channel = 'wpziyuan'
     # 监控最近消息数
-    limit = 2
+    limit = 10
     # 监控消息中评论数，有些视频、资源链接被放到评论中
     replies_limit = 1
     include = ['链接', '片名', '名称', '剧名', 'magnet', 'drive.uc.cn', 'caiyun.139.com', 'cloud.189.cn',
@@ -616,7 +615,7 @@ if __name__ == '__main__':
     }
     # 替换消息中关键字(tag/频道/群组)
     replacements = {
-        forward_to_channel: ["NewAliPan","ucquark", "uckuake", "yunpanshare", "yunpangroup", "Quark_0",
+        forward_to_channel: ["tgsearchers","yunpanall","NewAliPan","ucquark", "uckuake", "yunpanshare", "yunpangroup", "Quark_0",
                              "guaguale115", "Aliyundrive_Share_Channel", "alyd_g", "shareAliyun", "aliyundriveShare",
                              "hao115", "Mbox115", "NewQuark", "Quark_Share_Group", "QuarkRobot", "memosfanfan_bot",
                              "Quark_Movies", "aliyun_share_bot", "AliYunPanBot","None","大风车","雷锋","热心网友"],
@@ -627,7 +626,7 @@ if __name__ == '__main__':
     }
     # 自定义统计置顶消息，markdown格式
     message_md = (
-        "**Github：** [https://github.com/123](https://github.com/123)\n\n"
+        "**Github：** [https://github.com/51sky](https://github.com/51sky)\n\n"
     )
     # 匹配关键字分发到不同频道/群组，不需要分发直接设置channel_match=[]即可
     # channel_match = [
@@ -639,17 +638,17 @@ if __name__ == '__main__':
     # ]
     channel_match = []
     # 尝试加入公共群组频道，无法过验证
-    try_join = True
+    try_join = False
     # 消息中不含关键词图文，但有些资源被放到消息评论中，如果需要监控评论中资源，需要开启，否则建议关闭
     check_replies = False
     # 是否下载图片发送消息
     api_id = '2934000'
     api_hash = '7407f1e353d48363c48df4c8b3904acb'
-    string_session = ''
+    string_session = '1AZWarzoBuxr_-nQvQlk9fOv9Ka1cUrdwV1CGEfS0nRA3sF8mVC4C7gut0hyI_dZJ0PVE7LAbQrKZN1kN2sLIQugA904ntMFIEkjyiYS5kiPBARAXEVReLDt4yGOsLBXR6cKI_ra_91fCl5aNSYRKt9IHLbqDZUZWe5n9Gba3j7SLezYzvSfN1IV-K-bs_cTdJD3pQ0WXiCvPsyml3NLMmALFhqX7xix3HKUQby4KeRt4pOo_rle6x-8MLGcuhohYLevF7C0cKZ9v_2rNMiSfiiXC0tGnXx-gEUz0bke0TKbeRzJTS-In5AfpfDSVGGj3TmDFMj_tWqcak_LLPA7tmMF1hgjHWMA='
     # 默认不开启代理
     proxy = None
     # 首次检测自己频道最近checknum条消息去重，后续检测累加已转发的消息数，如果当日转发数超过checknum条，则检测当日转发总数
-    checknum = 50
+    checknum = 10
     # 允许转发今年之前的资源
     past_years = False
     # 只允许转发当日的
